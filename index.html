@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>TWITCH TV STREAMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div class="container">
+  <section id="introSection" class="row">
+    <header class="twitchHeader">
+      <h1>
+        <strong>Twitch Tv Streams</strong>
+      </h1>
+      <h2>Who's streaming?</h2>
+    </header>
+  </section>
+
+  <section id="streamsSection">
+    <!-- Nav tabs -->
+<ul class="nav nav-pills nav-fill flex-column flex-sm-row" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active flex-xs-fill text-xs-center" data-toggle="pill" href="#all" role="tab">All</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link flex-xs-fill text-xs-center" data-toggle="pill" href="#online" role="tab">Online</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link flex-xs-fill text-xs-center" data-toggle="pill" href="#offline" role="tab">Offline</a>
+  </li>
+</ul>
+
+<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active show fade in" id="all" role="tabpanel">   
+    <div id="allResults" class="list-group"></div>
+  </div>
+  
+  <div class="tab-pane fade in" id="online" role="tabpanel">
+    <div id="onlineResults" class="list-group"></div>
+  </div>
+  <div class="tab-pane fade in" id="offline" role="tabpanel">
+    <div id="offlineResults" class="list-group"></div>
+  </div>
+</div>
+  </section>
+
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
